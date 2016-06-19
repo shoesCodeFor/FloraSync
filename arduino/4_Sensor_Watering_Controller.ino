@@ -32,7 +32,7 @@
 #define SOIL_PIN_4  A3
 
 
-/* This pin will open our relay to turn on a water pump. */
+/* This pin will open our relay to turn on a water pump.  We recommend 12V because 120v is dangerous.  Please use caution */
 #define HOT_LEAD 10
 
 /* Timing variables */
@@ -195,8 +195,8 @@ void loop() {
   soilAvg = (soilStatus1 + soilStatus2 + soilStatus3 + soilStatus4)/ 4;
 
   /* NOTE if using a soil sensor that produces a number like 0 for dry and 1000 for wet you can comment the conversion out.  
-     Our purpose for the conversion is to create a low number for fry and high number for wet.  */
-  // soilAvg = (soilAvg * -0.75) + 1000;
+     Our purpose for the conversion is to create a low number for dry and high number for wet.  */
+  // old reading: soilAvg = (soilAvg * -0.75) + 1000; we've added this to the reading before to make calibration simple.
   
   /*  If it's dry it dies! So water it....but not too much
   Lets try 1 second and recheck with our soil probe on the loop */
