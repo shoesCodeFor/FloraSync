@@ -1,0 +1,171 @@
+body {
+    background-color: black;
+    font-family: 'Righteous', cursive;
+}
+h1,h2,h3,h4,h5,h6,p,a,{
+    text-align: center;   
+}
+#wrapper {
+    position: absolute;
+    background-image: url("UI-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90%;
+    height: 100%;
+    top: -5px;
+    left:5%;
+    display: flex;
+    /* For designg outline */
+    border: 1px solid white;
+}
+
+#nav-wrapper {
+    position: absolute;
+    width: 95%;
+    height: 33%;
+    top:2.5%;
+    left: 2.5%;
+    
+    /* For designg outline */
+    border: 1px solid white;
+    border-bottom: 3px solid black;
+    
+}
+
+#main-content{
+    position: absolute;
+    top: 35%;
+    width: 95%;
+    height: 60%;
+    margin: 2.5%;
+    display: flex;
+    /* For designg outline */
+    border: 1px solid white;    
+}
+
+#leftContent{
+    position: absolute;
+    top: 5%;
+    width: 45%;
+    height: 82.5%;
+    margin: 2.5%;
+    z-index: 10;
+    /* For designg outline */
+    border: 1px solid white; 
+}
+
+.main-headers{
+    position: relative;
+    left:16.5%;
+    width:66%; 
+}
+
+#rightContent{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 45%;
+    height: 82.5%;
+    margin: 2.5%;
+    
+    /* For designg outline */
+    border: 1px solid white; 
+}
+
+/* Styling for the elements within our Divs */
+
+/* Logo image and section */
+#logo {
+    position: absolute;
+    top: 2.5%;
+    left: 16.5%;
+    height:50%;
+    width:66%;
+    display: flex;
+    border: 1px solid white;
+}
+#logo img{
+    position: relative;
+    top:20%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+}
+
+
+/* Navigation section and bar styling*/
+#navBar {
+    position: absolute;
+    top: 53%;
+    left: 0%;
+    height:46%;
+    width:100%;
+    display: flex;
+    border: 1px solid white;
+}
+
+nav ul{
+    position: absolute;
+    left:5%;
+    width:85%;
+    height: 75%;
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    border: 1px solid white;
+}
+nav ul li{
+    position: relative;
+    left:0px;
+    width: 28.33%;
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 5.5%;
+    
+}   
+nav ul li img{
+    position: relative;
+    width: 80%;
+    
+}
+
+
+/* Left main content on homepage */
+#sensorData {
+    position: absolute;
+    top:2.5%;
+    left: 2.5%;
+    width: 95%;
+    height: 95%;
+    
+    border: 2px solid black;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.2);
+    z-index: 15;
+}
+
+#sensor1 {
+    position: relative;
+    left:15%;
+    top:1.5%
+}
+/* Right main content on homepage */
+#settings{
+    position: absolute;
+    top:2.5%;
+    left: 2.5%;
+    width: 95%;
+    height: 95%;
+    
+    border: 2px solid black;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.2);
+    z-index: 15;
+}
+#alarmSettings {
+    position: relative;
+    left:15%;
+}
