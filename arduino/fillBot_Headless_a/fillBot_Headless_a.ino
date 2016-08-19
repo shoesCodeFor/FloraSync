@@ -5,17 +5,23 @@
   Concept: with a fillBot you can fill any container using a simple 
   wire based water level sensor or this one https://www.adafruit.com/product/464
   if you want amazing results. NOTE:  You must import their library.
+  
+  We use a relay to open and close our water solenoid or pump.  
 
-  SN#2016-08-15
+  
+  
   
   
   Water Sensor over Cat5 - 
   White Green VCC - D4
   Brown GND - GND
   Blue AnalogOut - A0                        
-
+  Timing:
   typical 5 gal was 1 minute - 60000 mils
+  ALTER ABOVE TO SET TIMING VARIABLES
 */
+
+
 #define RELAY_PIN 6
 // Serial is the date (of build) followed by type of Arduino/Atmel board if you're wanting to use our style database
 #define SERIAL_NUMBER Year-Month-Day-ArduinoMake 
