@@ -3,7 +3,7 @@
 ###Using a dual keystone wall plate we can create jacks for our sensors
 
 <table class="demo">
-	<caption>Cat5 Cables - 1 &amp; 2</caption>
+	<caption>6 Sensor Cat5 Cables - 1 &amp; 2</caption>
 	<thead>
 	<tr>
 		<th>Pin</th>
@@ -50,7 +50,7 @@
 		<td>&nbsp;Green(2)</td>
 	</tr>
 	<tr>
-		<td colspan="2">&nbsp;GND</td>
+		<td colspan="2">&nbsp;GND - Common for sensors</td>
 		<td colspan="2">&nbsp;Brown(2)</td>
 		
 	</tr>
