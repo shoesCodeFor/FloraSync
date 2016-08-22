@@ -1,30 +1,7 @@
 #Cat 5 to Arduino
 ##We will use 2 Cat 5 cable sets
 ###Using a dual keystone wall plate we can create jacks for our sensors
-Jack 1
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
 
-<style>
-	.demo {
-		border:1px solid #C0C0C0;
-		border-collapse:collapse;
-		padding:5px;
-	}
-	.demo th {
-		border:1px solid #C0C0C0;
-		padding:5px;
-		background:#F0F0F0;
-	}
-	.demo td {
-		border:1px solid #C0C0C0;
-		padding:5px;
-	}
-</style>
 <table class="demo">
 	<caption>Cat5 Cables - 1 &amp; 2</caption>
 	<thead>
