@@ -12,7 +12,19 @@ void initBot(char [418] stringIn){
 }
 
 void readEEPROM(int startingBlock, int chunkSize){
-       for(int i = startingBlock, i < chunkSize, i++;){
-           EEPROM.read
+        char oneChar;
+        for(int i = startingBlock, i < chunkSize, i++;){
+           oneChar = EEPROM.read(i);
+            
        }
 }
+char *arrayFromEEPROM(int startingBlock, int chunkSize, char buf[])
+	{
+    int placeKeeper = 0;
+	char oneChar;
+        for(int i = startingBlock; i < chunkSize; i++){
+            oneChar = EEPROM.read(i);
+            buf[placeKeeper] = oneChar;
+        }
+	return buf;
+	}

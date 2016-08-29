@@ -37,7 +37,6 @@ float aSensorRead(int pin1, char[2]readPin, int interval){
     return reading;
 }
 
-<<<<<<< HEAD
 /* This is to open our relay */
 void openRelay(int interval, int pin1){
     if(interval = null){
@@ -51,7 +50,7 @@ void openRelay(int interval, int pin1){
     delay(inter
 }
 
-=======
+
 float quickRead(int pin1, char[2] readPin, float threshold){
     float aReading = 0;
     digitalWrite(pin1, HIGH);
@@ -73,4 +72,4 @@ void openRelay(int relayPin, int threshold){
 
 
 
->>>>>>> refs/remotes/origin/master
+
