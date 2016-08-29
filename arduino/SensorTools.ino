@@ -37,6 +37,20 @@ float aSensorRead(int pin1, char[2]readPin, int interval){
     return reading;
 }
 
+/* This is to open our relay */
+void openRelay(int interval, int pin1){
+    if(interval = null){
+        interval = 10000 //10 Seconds   
+    }
+    digitalWrite(pin1, LOW);
+    Serial.print("Opening the relay");
+    for(int i = 0; i < interval; i++){
+        Serial.print(".");   
+    }
+    delay(inter
+}
+
+
 float quickRead(int pin1, char[2] readPin, float threshold){
     float aReading = 0;
     digitalWrite(pin1, HIGH);
@@ -55,6 +69,7 @@ void openRelay(int relayPin, int threshold){
     }
     digitalWrite(relayPin, HIGH);
 }
+
 
 
 
