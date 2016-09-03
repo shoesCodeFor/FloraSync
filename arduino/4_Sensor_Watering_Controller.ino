@@ -6,7 +6,7 @@
     communicate with the FloraSync hub.
 
     
-
+    Cat 5 to Soil Sensor
     Wiring sensors - Orange is ground and right pin on sensor
     
 */
