@@ -11,13 +11,8 @@ void initBot(char [418] stringIn){
     }    
 }
 
-void readEEPROM(int startingBlock, int chunkSize){
-        char oneChar;
-        for(int i = startingBlock, i < chunkSize, i++;){
-           oneChar = EEPROM.read(i);
-            
-       }
-}
+
+// This will return an entire char array
 char *arrayFromEEPROM(int startingBlock, int chunkSize, char buf[])
 	{
     int placeKeeper = 0;
@@ -27,4 +22,13 @@ char *arrayFromEEPROM(int startingBlock, int chunkSize, char buf[])
             buf[placeKeeper] = oneChar;
         }
 	return buf;
-	}
+} // End of arrayFromEEPROM
+
+
+
+// This funtion is meant to be used similarily to the one above.  This method returns a single character so call a for loop in you main program
+char readEEPROM(int memoryBlock){
+        char oneChar;
+        oneChar = EEPROM.read(memoryBlock);
+        return oneChar;    
+}
