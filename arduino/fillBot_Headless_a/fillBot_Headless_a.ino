@@ -7,10 +7,6 @@
   if you want amazing results. NOTE:  You must import their library.
   
   We use a relay to open and close our water solenoid or pump.  
-
-  
-  
-  
   
   Water Sensor over Cat5 - 
   White Green VCC - D4
