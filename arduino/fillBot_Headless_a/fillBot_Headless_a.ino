@@ -54,11 +54,14 @@ int relayInterval = 6600000; // 3 minutes
 void setup(){
   Serial.begin(115200);
   Serial.println("Serial Working.  Lets setup some sensors.");
+      
   pinMode(VCC_PIN, OUTPUT);
   pinMode(ANALOG_READ, INPUT);
   pinMode(RELAY_PIN,OUTPUT);
   
 }
+
+
 void loop(){
   digitalWrite(RELAY_PIN,HIGH);
   
@@ -67,19 +70,22 @@ void loop(){
     Serial.println("We're opening up the circuit.");
     
   for(int i; i < relayInterval; i++){
-    Serial.println(i);
+    Serial.print(i);
+    Serial.print(".");  
     digitalWrite(RELAY_PIN, LOW);
-    digitalWrite(VCC_PIN, HIGH);
-    sensor1 = analogRead(ANALOG_READ);
-    sensor1 = (sensor1 * (-.75)) + 1000;
-    Serial.println(sensor1);
+    if(i%5==0){
+      digitalWrite(VCC_PIN, HIGH);
+      sensor1 = analogRead(ANALOG_READ);
+      sensor1 = (sensor1 * (-.75)) + 1000;
+      Serial.println(sensor1);   
+    }  
     if(sensor1 > threshold){
       break;
-    }
+    } 
     
-  }
+  }// End of for loop for read with relay on
   
-}
+} // end of main loop
 }
 void readSensor(){
       digitalWrite(VCC_PIN, HIGH);
