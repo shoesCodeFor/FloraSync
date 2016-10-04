@@ -30,8 +30,9 @@ void initBot(char [418] stringIn){
 
 
 // This will return an entire char array
-char *arrayFromEEPROM(int startingBlock, int chunkSize, char buf[])
+char *arrayFromEEPROM(int startingBlock, int chunkSize)
 	{
+    char buf[chunkSize];
     int placeKeeper = 0;
 	char oneChar;
         for(int i = startingBlock; i < chunkSize; i++){
