@@ -1,6 +1,6 @@
 # FloraSync - Is Moving
 
-Look for the FloraSync Org to come soon
+Look for the FloraSync Org -> We'll post the link as soon as the changes are finalized
 
 We're making plants love technology.
 
