@@ -1,4 +1,7 @@
-# FloraSync
+# FloraSync - Is Moving
+
+Look for the FloraSync Org to come soon
+
 We're making plants love technology.
 
 It is the long-term goal of the FloraSync project to provide a library for farmers in emerging countries to develop an inexpensive 
